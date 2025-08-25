@@ -8,3 +8,8 @@ print("myVariable")
     # prints myVariable
 
 input("Enter into terminal: ")
+    # creates an input area in the terminal''
+
+myName = input("Type your name: ")
+print(myName)
+
