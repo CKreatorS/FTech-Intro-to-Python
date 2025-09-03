@@ -1,3 +1,6 @@
+# Caitlyn Morales
+# 08/29/25
+
 your_name = input("Type your name: ")
 fav_color = input("Type your favorite color: ")
 
