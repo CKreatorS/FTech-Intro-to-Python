@@ -38,3 +38,42 @@
 #     print("D")
 # else:
 #     print("F")
+
+# # Match-case scenarios
+
+# foodOption = input("What would you like for lunch? ")
+# match foodOption:
+#     case 'sandwhich':
+#         print("You selected sandwich.")
+#     case 'pizza':
+#         print("You selected pizza.")
+#     case 'sushi':
+#         print("You selected sushi.")
+#     case _:
+#         print("We dont have that.")
+
+# While Loops
+
+# x = 0
+# while (x < 19):
+#     print("Are we there yet?")
+#     print("\n")
+#     x+=1
+
+count = 5 
+guess = 0 
+answer = 100
+while(guess != answer):
+    question = input("Guess a number between 0 and 100: ")
+    guess = int(question)
+    count -= 1
+    if (count > 5):
+        print("Out of guesses.")
+        # break statements can be used to exit a loop
+        break
+    else:
+        print(f"You have {count} guesses left")
+        # continue statements skips to the next iteration
+        continue
+if (guess == answer):
+        print("Correct!")
