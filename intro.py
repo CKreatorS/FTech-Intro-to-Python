@@ -60,20 +60,33 @@
 #     print("\n")
 #     x+=1
 
-count = 5 
-guess = 0 
-answer = 100
-while(guess != answer):
-    question = input("Guess a number between 0 and 100: ")
-    guess = int(question)
-    count -= 1
-    if (count > 5):
-        print("Out of guesses.")
-        # break statements can be used to exit a loop
-        break
-    else:
-        print(f"You have {count} guesses left")
-        # continue statements skips to the next iteration
-        continue
-if (guess == answer):
-        print("Correct!")
+# count = 5 
+# guess = 0 
+# answer = 100
+# while(guess != answer):
+#     question = input("Guess a number between 0 and 100: ")
+#     guess = int(question)
+#     count -= 1
+#     if (count > 5):
+#         print("Out of guesses.")
+#         # break statements can be used to exit a loop
+#         break
+#     else:
+#         print(f"You have {count} guesses left")
+#         # continue statements skips to the next iteration
+#         continue
+# if (guess == answer):
+#         print("Correct!")
+
+# For Loops
+
+for i in range(10):
+    print("something here 10x")
+
+# i defaults to starting at 0
+
+for i in range(2, 9):
+    print("something here from 2-8")
+
+for i in range(2,9,2):
+    print("2-8, that one only-evens answer")
