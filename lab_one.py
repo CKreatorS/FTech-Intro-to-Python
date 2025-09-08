@@ -8,26 +8,30 @@ Program first asks to pick from a menu of conversions. Then it asks for the inpu
 performs the conversion, and displays the result.
 """
 
-print("Welcome to Converter")
+options = """
 
+(1)Kelvin to Farenheit
+(2)Farenheit to Kelvin
+(3)Meters to Yards
+(4)Yards to Meters
+(5)Quit
+
+"""
+
+print("Welcome to Converter")
+print(options)
 selection = input("Please select from the following converting options: ")
-print("""
-      (1)Kelvin to Farenheit
-      (2)Farenheit to Kelvin
-      (3)Meters to Yards
-      (4)Yards to Meters
-      (5)Quit
-    """)
+
 match selection:
     case '1':
-        print("")
+        print("You selected Kelvin to Farenheit")
     case '2':
-        print("")
+        print("You selected Farenheit to Kelvin")
     case '3':
-        print("")
+        print("You selected Meters to Yards")
     case '4':
-        print("")
+        print("You selected Yards to Meters")
     case '5':
-        print("")
-
-    
+        print("Goodbye")
+    case '_':
+        print("Please make a selection")
