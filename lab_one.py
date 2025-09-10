@@ -33,12 +33,18 @@ match selection:
         print("You selected Farenheit to Kelvin")
         farenheit = input(("Enter degrees in Farenheit: "))
         farenheit = (((float(farenheit)-32)/1.8)+273.15)
-        print(f"Your degrees in Farenheit is {farenheit}")
+        print(f"Your degrees in Kelvin is {farenheit}")
         
     case '3':
         print("You selected Meters to Yards")
+        meters = input(("Enter degrees in Meters: "))
+        meters = (float(meters)*1.094)
+        print(f"Your degrees in Farenheit is {meters}")
     case '4':
         print("You selected Yards to Meters")
+        yards = input(("Enter degrees in Yards: "))
+        yards = (float(yards)/1.094)
+        print(f"Your degrees in Farenheit is {yards}")
     case '5':
         print("Thank you for using converter, goodbye.")
 
