@@ -20,7 +20,9 @@
 # print("Hello " + input_name)
 #     # prints the inputted name after the written str
 
-# if statements, if-then statements, if-else statements, if-then-elif
+"""
+if statements, if-then statements, if-else statements, if-then-elif
+"""
 
 # grade = 100
 # # if (grade > 60):
@@ -38,9 +40,9 @@
 #     print("D")
 # else:
 #     print("F")
-
-# # Match-case scenarios
-
+"""
+Match-case scenarios
+"""
 # foodOption = input("What would you like for lunch? ")
 # match foodOption:
 #     case 'sandwhich':
@@ -52,8 +54,9 @@
 #     case _:
 #         print("We dont have that.")
 
-# While Loops
-
+"""
+While Loops
+"""
 # x = 0
 # while (x < 19):
 #     print("Are we there yet?")
@@ -78,15 +81,62 @@
 # if (guess == answer):
 #         print("Correct!")
 
-# For Loops
+"""
+For Loops
+"""
 
-for i in range(10):
-    print("something here 10x")
+# for i in range(10):
+#     print("something here 10x")
 
-# i defaults to starting at 0
+# # i defaults to starting at 0
 
-for i in range(2, 9):
-    print("something here from 2-8")
+# for i in range(2, 9):
+#     print("something here from 2-8")
 
-for i in range(2,9,2):
-    print("2-8, that one only-evens answer")
+# for i in range(2,9,2):
+#     print("2-8, that one only-evens answer")
+
+"""
+Lists in Loops
+"""
+# myList = [2, "Fred", 16.7]
+# myList.append("Apples")
+# # append adds to the end of the list
+
+# print(len(myList))
+# # produces the number length of the list 
+
+# print(myList)
+# myList.insert(2, "Barney")
+# # inserts at a certain point within the list 
+
+# print(myList)
+
+# myList.pop(1)
+# # removes value from the list and returns what was in that position
+
+# myList.remove("Barney")
+# # erases an element from the list
+
+# myList.index("Fred")
+# # searches through the list and finds the position of the element found
+
+# myList1 = [5,4,7]
+# myList1.sort()
+# print(myList1)
+
+# values = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+# results = []
+
+# for value in values:
+#     if (value % 3 == 0):
+#         results.append(value)
+# print(results)
+
+values = [1,2,3,4]
+i = 1
+j = 2
+temp = values[i]
+values[i] = values[j]
+values[j] = temp
+print(values)
