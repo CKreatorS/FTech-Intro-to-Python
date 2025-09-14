@@ -63,23 +63,23 @@ While Loops
 #     print("\n")
 #     x+=1
 
-# count = 5 
-# guess = 0 
-# answer = 100
-# while(guess != answer):
-#     question = input("Guess a number between 0 and 100: ")
-#     guess = int(question)
-#     count -= 1
-#     if (count > 5):
-#         print("Out of guesses.")
-#         # break statements can be used to exit a loop
-#         break
-#     else:
-#         print(f"You have {count} guesses left")
-#         # continue statements skips to the next iteration
-#         continue
-# if (guess == answer):
-#         print("Correct!")
+count = 5 
+guess = 0 
+answer = 100
+while(guess != answer):
+    question = input("Guess a number between 0 and 100: ")
+    guess = int(question)
+    count -= 1
+    if (count > 5):
+        print("Out of guesses.")
+        # break statements can be used to exit a loop
+        break
+    else:
+        print(f"You have {count} guesses left")
+        # continue statements skips to the next iteration
+        continue
+if (guess == answer):
+        print("Correct!")
 
 """
 For Loops
@@ -133,10 +133,17 @@ Lists in Loops
 #         results.append(value)
 # print(results)
 
-values = [1,2,3,4]
-i = 1
-j = 2
-temp = values[i]
-values[i] = values[j]
-values[j] = temp
-print(values)
+# values = [1,2,3,4]
+# i = 1
+# j = 2
+# temp = values[i]
+# values[i] = values[j]
+# values[j] = temp
+# print(values)
+
+"""
+Dictionaries 
+"""
+
+# animalColors = {'frog':'green', 'swan':'white'}
+# key and values seperated by :
