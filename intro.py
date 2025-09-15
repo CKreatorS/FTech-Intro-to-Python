@@ -197,6 +197,25 @@ Tuples are immutable lists, cannot be changed after creation
 
 # odds.difference(primes) #returns a new set with elements in the first set that are not in the second set
 
-nestedList = [[1,2,3],[4,5,6],[7,8,9]]
-print(nestedList[1])
-print(nestedList[1][1])
+# nestedList = [[1,2,3],[4,5,6],[7,8,9]]
+# print(nestedList[1])
+# print(nestedList[1][1])
+# # two dimensional arrays
+# # rugs rugs rugs rugs rugs rugs rugs
+
+# mealMenu = {"Breakfast":["sausage", "ham"], "Lunch":["burger", "fries", "salad"], "Dinner":["steak", "potatoes", "broccoli"]}
+# print(mealMenu)
+# mealMenu["Lunch"].append("soda")
+
+myTuple = (1,2,3,4)
+num = myTuple[1] # gets 1
+# all list operations can be used so long as htey dont alter the tuple
+
+a = (1,2,3)
+b = (4,5,6)
+q = zip(a,b)
+# zips two tuples together into a list of tuples
+
+e = ("Mary", "Ben", "John")
+f = (25, 30, 35)
+print(tuple(zip(e,f)))
