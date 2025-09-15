@@ -22,11 +22,15 @@ options = """
 print("Welcome to Converter")
 
 while True:
+    # will run the loop indefinetly until the user quits
     print(options)
+    # prints options every time loop runs
     try:
+         # try accepts user input and runs for potential errors
          selection = int(input("Please select from the following converting options: "))
     except ValueError:
-        print("Invalid input, please enter a number between 1 and 5.")
+        # looks for potential value errors, restarts the loop if found
+        print("Please enter a number between 1 and 5.")
         continue
         
     if (selection == 1):
@@ -59,4 +63,3 @@ while True:
 
     else:
         print("Please make a valid selection.")
-        continue

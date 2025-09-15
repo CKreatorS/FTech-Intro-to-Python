@@ -63,23 +63,23 @@ While Loops
 #     print("\n")
 #     x+=1
 
-count = 5 
-guess = 0 
-answer = 100
-while(guess != answer):
-    question = input("Guess a number between 0 and 100: ")
-    guess = int(question)
-    count -= 1
-    if (count > 5):
-        print("Out of guesses.")
-        # break statements can be used to exit a loop
-        break
-    else:
-        print(f"You have {count} guesses left")
-        # continue statements skips to the next iteration
-        continue
-if (guess == answer):
-        print("Correct!")
+# count = 5 
+# guess = 0 
+# answer = 100
+# while(guess != answer):
+#     question = input("Guess a number between 0 and 100: ")
+#     guess = int(question)
+#     count -= 1
+#     if (count > 5):
+#         print("Out of guesses.")
+#         # break statements can be used to exit a loop
+#         break
+#     else:
+#         print(f"You have {count} guesses left")
+#         # continue statements skips to the next iteration
+#         continue
+# if (guess == answer):
+#         print("Correct!")
 
 """
 For Loops
@@ -146,4 +146,57 @@ Dictionaries
 """
 
 # animalColors = {'frog':'green', 'swan':'white'}
-# key and values seperated by :
+# # key and values seperated by :
+# for value in animalColors.values():
+#     print(value)
+
+# # the items method returns both key and value as tuples
+# for pair in animalColors.items():
+#     print(pair)
+#     print(f"{pair[0]}:{pair[1]}")
+
+"""
+Sets and Tuples
+Sets act like mathematical sets, no duplicates and unordered
+Tuples are immutable lists, cannot be changed after creation
+"""
+
+# foods = {"pizza", "sushi", "burger", "pizza"}
+# # Elements are seperated by commas, you cannot make an empty set with {} that is treated as a dictionary
+
+# emptySet = set()
+# emptyTuple = ()
+# emptyDict = {}
+
+# # in and not in operator key words are used to check for membership in sets, lists, tuples, and dictionaries
+
+# "Pie" in foods 
+# # returns false
+# "Sushi" in foods
+# # returns true
+# "Bagel" not in foods
+# # returns true
+
+# odds = (1,3,5,7,9)
+# primes = (2,3,5,7, 11)
+
+# odds.add(13)
+# primes.add(13)
+
+# odds.discard(11)
+# primes.discard(17) #fails silently
+# odds.remove(8) #throws an error
+
+# odds.clear() #removes all elements from the set, sets lenth to 0
+
+# primes.issubset(odds) #returns false
+# primes.issuperset(odds) #returns true
+
+# odds.union(primes) #returns a new set with all elements from both sets
+# odds.intersection(primes) #returns a new set with only elements in both sets
+
+# odds.difference(primes) #returns a new set with elements in the first set that are not in the second set
+
+nestedList = [[1,2,3],[4,5,6],[7,8,9]]
+print(nestedList[1])
+print(nestedList[1][1])
