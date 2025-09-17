@@ -207,15 +207,29 @@ Tuples are immutable lists, cannot be changed after creation
 # print(mealMenu)
 # mealMenu["Lunch"].append("soda")
 
-myTuple = (1,2,3,4)
-num = myTuple[1] # gets 1
-# all list operations can be used so long as htey dont alter the tuple
+# myTuple = (1,2,3,4)
+# num = myTuple[1] # gets 1
+# # all list operations can be used so long as htey dont alter the tuple
 
-a = (1,2,3)
-b = (4,5,6)
-q = zip(a,b)
-# zips two tuples together into a list of tuples
+# a = (1,2,3)
+# b = (4,5,6)
+# q = zip(a,b)
+# # zips two tuples together into a list of tuples
 
-e = ("Mary", "Ben", "John")
-f = (25, 30, 35)
-print(tuple(zip(e,f)))
+# e = ("Mary", "Ben", "John")
+# f = (25, 30, 35)
+# print(tuple(zip(e,f)))
+
+"""
+Functions
+
+"""
+
+def f1(x, y, z):
+    return x + y + z
+
+def f2(x, y=3, z=5):
+    return x + y + z
+
+print(f1(1,2,3))
+print(f2(1))
