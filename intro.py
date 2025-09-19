@@ -225,11 +225,37 @@ Functions
 
 """
 
-def f1(x, y, z):
-    return x + y + z
+# def f1(x, y, z):
+#     return x + y + z
 
-def f2(x, y=3, z=5):
-    return x + y + z
+# def f2(x, y=3, z=5):
+#     return x + y + z
 
-print(f1(1,2,3))
-print(f2(1))
+# print(f1(1,2,3))
+# print(f2(1))
+
+# def doubleList(inpList):
+#     for i in range inpList:
+#         inpList[i] *= 2
+#     return
+# # lists and other collections do not need to be returned as they are passed by reference
+
+# odds = [1,3,5,7,9]
+# doubleList(odds)
+# print(odds)
+
+# def generateEvens(seqLength):
+#     evens = []
+#     for i in range(seqLength):
+#         evens.append(2*i)
+#     return evens 
+    
+# print(generateEvens(12))
+
+def average(*values):
+    sum = 0
+    for v in values:
+        sum += v
+    return float(sum/len(values))
+
+print(average(27,9))
